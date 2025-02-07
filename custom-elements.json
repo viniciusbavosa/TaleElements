@@ -1,0 +1,418 @@
+{
+  "name": "tale-elements",
+  "version": "0.1.0",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "./dist/esm/index.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "TButton",
+          "customElement": true,
+          "description": "Class representing the custom element t-button.",
+          "tagName": "t-button",
+          "attributes": [
+            {
+              "name": "mode",
+              "description": "Defines how the ShadowDOM should behave.",
+              "type": "open | closed",
+              "default": "closed"
+            },
+            {
+              "name": "variant",
+              "description": "Defines the button's visual style.",
+              "type": "string",
+              "default": ""
+            },
+            {
+              "name": "shape",
+              "description": "Defines the button's shape.",
+              "type": "string",
+              "default": ""
+            },
+            {
+              "name": "disabled",
+              "description": "Disables the button.",
+              "type": "boolean",
+              "default": "false"
+            },
+            {
+              "name": "type",
+              "description": "Defines the button type.",
+              "type": "string",
+              "default": "button"
+            },
+            {
+              "name": "buttonClass",
+              "description": "Custom class for the button.",
+              "type": "string",
+              "default": ""
+            }
+          ],
+          "properties": [
+            { "name": "variant", "type": "string", "default": "" },
+            { "name": "shape", "type": "string", "default": "" },
+            { "name": "disabled", "type": "boolean", "default": "false" },
+            { "name": "type", "type": "string", "default": "button" },
+            { "name": "buttonClass", "type": "string", "default": "" }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "TConsole",
+          "description": "A console-like element for displaying code snippets.",
+          "customElement": true,
+          "tagName": "t-console",
+          "attributes": [
+            {
+              "name": "mode",
+              "description": "Defines how the ShadowDOM should behave.",
+              "type": "open | closed",
+              "default": "closed"
+            },
+            {
+              "name": "variant",
+              "description": "Defines the visual style of the console.",
+              "type": "string"
+            }
+          ],
+          "properties": [
+            {
+              "name": "mode",
+              "description": "Defines how the ShadowDOM should behave.",
+              "type": "open | closed"
+            },
+            {
+              "name": "variant",
+              "attribute": "variant",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "TInput",
+          "customElement": true,
+          "tagName": "t-input",
+          "description": "Class representing the custom element t-input.",
+          "members": [
+            {
+              "name": "constructor",
+              "kind": "method",
+              "description": "Creates an instance of TInput and initializes the shadow DOM."
+            }
+          ],
+          "attributes": [
+            {
+              "name": "mode",
+              "description": "Defines how the ShadowDOM should behave.",
+              "type": "open | closed",
+              "default": "closed"
+            },
+            {
+              "name": "variant",
+              "description": "Defines the color variant of the input.",
+              "type": "secondary | red | ghost"
+            },
+            {
+              "name": "shape",
+              "description": "Defines the shape of the input.",
+              "type": "square"
+            },
+            {
+              "name": "type",
+              "description": "Specifies the input type.",
+              "type": "text | password | email | number | search | tel | url | checkbox | radio | date | time | datetime-local | month | week | color | file | hidden"
+            },
+            {
+              "name": "name",
+              "description": "Specifies the name of the input.",
+              "type": "string"
+            },
+            {
+              "name": "minLength",
+              "description": "Specifies the minimum number of characters.",
+              "type": "number"
+            },
+            {
+              "name": "maxLength",
+              "description": "Specifies the maximum number of characters.",
+              "type": "number"
+            },
+            {
+              "name": "placeholder",
+              "description": "Defines a placeholder text.",
+              "type": "string"
+            },
+            {
+              "name": "inputClass",
+              "description": "CSS class for the input element.",
+              "type": "string"
+            },
+            {
+              "name": "labelText",
+              "description": "Text for the label element.",
+              "type": "string"
+            },
+            {
+              "name": "labelClass",
+              "description": "CSS class for the label element.",
+              "type": "string"
+            },
+            {
+              "name": "required",
+              "description": "Marks the input as required.",
+              "type": "boolean"
+            },
+            {
+              "name": "disabled",
+              "description": "Disables the input field.",
+              "type": "boolean"
+            },
+            {
+              "name": "checked",
+              "description": "Marks the input as checked (for checkboxes and radios).",
+              "type": "boolean"
+            }
+          ],
+          "properties": [
+            {
+              "name": "variant",
+              "description": "Defines the color variant of the input.",
+              "type": "string"
+            },
+            {
+              "name": "shape",
+              "description": "Defines the shape of the input.",
+              "type": "string"
+            },
+            {
+              "name": "type",
+              "description": "Specifies the input type.",
+              "type": "string"
+            },
+            {
+              "name": "name",
+              "description": "Specifies the name of the input.",
+              "type": "string"
+            },
+            {
+              "name": "minlength",
+              "description": "Specifies the minimum number of characters.",
+              "type": "string"
+            },
+            {
+              "name": "maxlength",
+              "description": "Specifies the maximum number of characters.",
+              "type": "string"
+            },
+            {
+              "name": "placeholder",
+              "description": "Defines a placeholder text.",
+              "type": "string"
+            },
+            {
+              "name": "inputClass",
+              "description": "CSS class for the input element.",
+              "type": "string"
+            },
+            {
+              "name": "labelText",
+              "description": "Text for the label element.",
+              "type": "string"
+            },
+            {
+              "name": "labelClass",
+              "description": "CSS class for the label element.",
+              "type": "string"
+            },
+            {
+              "name": "required",
+              "description": "Marks the input as required.",
+              "type": "boolean"
+            },
+            {
+              "name": "disabled",
+              "description": "Disables the input field.",
+              "type": "boolean"
+            },
+            {
+              "name": "checked",
+              "description": "Marks the input as checked (for checkboxes and radios).",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "t-button",
+      "description": "A customizable button element with support for different styles and shapes.",
+      "path": "./dist/esm/components/button/button.js",
+      "attributes": [
+        {
+          "name": "mode",
+          "description": "Defines how the ShadowDOM should behave.",
+          "type": "open | closed",
+          "default": "closed"
+        },
+        {
+          "name": "variant",
+          "description": "Defines the button's visual style."
+        },
+        { "name": "shape", "description": "Defines the button's shape." },
+        { "name": "disabled", "description": "Disables the button." },
+        { "name": "type", "description": "Defines the button type." },
+        { "name": "buttonClass", "description": "Custom class for the button." }
+      ],
+      "properties": [
+        {
+          "name": "variant",
+          "attribute": "variant",
+          "type": "secondary | red | ghost"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string"
+        },
+        {
+          "name": "shape",
+          "attribute": "shape",
+          "type": "string"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "t-console",
+      "description": "A customizable console element for displaying styled code snippets.",
+      "path": "./dist/esm/components/console/console.js",
+      "attributes": [
+        {
+          "name": "mode",
+          "description": "Defines how the ShadowDOM should behave.",
+          "type": "open | closed",
+          "default": "closed"
+        },
+        {
+          "name": "variant",
+          "description": "Defines the visual style of the console.",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "variant",
+          "attribute": "variant",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "t-input",
+      "path": "./dist/esm/components/input/input.js",
+      "description": "A custom input element with various styles and attributes.",
+      "attributes": [
+        {
+          "name": "mode",
+          "description": "Defines how the ShadowDOM should behave.",
+          "type": "open | closed",
+          "default": "closed"
+        },
+        {
+          "name": "variant",
+          "description": "Defines the color variant of the input.",
+          "type": "secondary | red | ghost"
+        },
+        {
+          "name": "shape",
+          "description": "Defines the shape of the input.",
+          "type": "square"
+        },
+        {
+          "name": "type",
+          "description": "Specifies the input type.",
+          "type": "text | password | email | number | search | tel | url | checkbox | radio | date | time | datetime-local | month | week | color | file | hidden"
+        },
+        {
+          "name": "name",
+          "description": "Specifies the name of the input.",
+          "type": "string"
+        },
+        {
+          "name": "minLength",
+          "description": "Specifies the minimum number of characters.",
+          "type": "number"
+        },
+        {
+          "name": "maxLength",
+          "description": "Specifies the maximum number of characters.",
+          "type": "number"
+        },
+        {
+          "name": "placeholder",
+          "description": "Defines a placeholder text.",
+          "type": "string"
+        },
+        {
+          "name": "inputClass",
+          "description": "CSS class for the input element.",
+          "type": "string"
+        },
+        {
+          "name": "labelText",
+          "description": "Text for the label element.",
+          "type": "string"
+        },
+        {
+          "name": "labelClass",
+          "description": "CSS class for the label element.",
+          "type": "string"
+        },
+        {
+          "name": "required",
+          "description": "Marks the input as required.",
+          "type": "boolean"
+        },
+        {
+          "name": "disabled",
+          "description": "Disables the input field.",
+          "type": "boolean"
+        },
+        {
+          "name": "checked",
+          "description": "Marks the input as checked (for checkboxes and radios).",
+          "type": "boolean"
+        }
+      ],
+      "slots": [],
+      "events": [],
+      "cssProperties": [
+        {
+          "name": "--white",
+          "description": "Base white color.",
+          "default": "#eeeeee"
+        },
+        {
+          "name": "--black",
+          "description": "Base black color.",
+          "default": "#0e0e0e"
+        },
+        {
+          "name": "--red",
+          "description": "Base red color.",
+          "default": "crimson"
+        }
+      ],
+      "shadow": { "mode": "closed" }
+    }
+  ]
+}

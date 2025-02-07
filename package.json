@@ -1,0 +1,52 @@
+{
+  "name": "tale-elements",
+  "version": "0.1.0",
+  "description": "Reusable Web Components",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "customElements": "custom-elements.json",
+  "files": [
+    "dist",
+    "*.d.ts",
+    "custom-elements.json"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./components/button": {
+      "types": "./dist/types/components/button/button.d.ts"
+    },
+    "./components/console": {
+      "types": "./dist/types/components/console/console.d.ts"
+    },
+    "./utils/generateTemplate": {
+      "types": "./dist/types/utils/generateTemplate.d.ts"
+    }
+  },
+  "scripts": {
+    "analyze": "wca analyze 'src/**/*.{js,ts}' --outFile custom-elements.json",
+    "build": "npx rollup -c --watch"
+  },
+  "keywords": [
+    "components",
+    "ui-library",
+    "web-components",
+    "css",
+    "custom-elements"
+  ],
+  "author": "Vinicius M. Bavosa",
+  "license": "MIT",
+  "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "^4.34.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3"
+  }
+}
