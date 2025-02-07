@@ -43,13 +43,13 @@ How you add the component to a page may vary depending on the tools you use in y
 
 ```js
 // Importing into a javascript file, like index.js
-import { UsaBanner } from "@tale-elements";
+import { TButton } from "@tale-elements";
 ```
 
 ```html
 <!-- importing directy into an HTML page -->
 <script type="module">
-  import { UsaBanner } from "@tale-elements";
+  import { TButton } from "@tale-elements";
 </script>
 <t-button></t-button>
 ```
