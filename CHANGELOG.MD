@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2] - 2025-02-10
+
+### Patch
+
+- Console Web Component
+
+  - Fix text overflow
+
 ## [0.1.0] - 2025-02-04
 
 ### First Release

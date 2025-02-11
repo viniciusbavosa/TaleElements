@@ -14,15 +14,16 @@ export default class TConsole extends HTMLElement {
           }
 
           div {
-            --max-w: 90ch;
-            --min-w: 35ch;
-
-            inline-size: clamp(var(--min-w), 50%, var(--max-w));
-            padding: 0.5em;
-            margin: auto;
+            
+            overflow-x: clip;
+            padding: 0.5rem;
+            margin: 1rem auto;
             border-radius: 8px;
             background-color: #3c3c3c;
             color: #00ff00;
+            text-wrap: balance;
+
+          
           }
 
           .white {
