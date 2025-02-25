@@ -6,7 +6,9 @@
 
 # Motivation
 
-The purpose of this library is to make it easier to reuse components across my projects. **Note:** This library is currently under development, and its interfaces may change without prior notice.
+The purpose of this library is to make it easier to reuse components across my projects. **Tale Elements** is a library of reusable components built with **Web Components**.
+
+**Note:** This library is currently under development, and its interfaces may change without prior notice.
 
 # Components
 
@@ -137,6 +139,10 @@ Or use `::part(t-console)` to apply custom styles to the console
 
 </li>
 </ul>
+
+# Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 # License
 
